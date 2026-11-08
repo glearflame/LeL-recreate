@@ -1,0 +1,16 @@
+[package]
+name = "horizon-client"
+description = "Cliente do Horizon: loop de jogo e executável."
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "horizon-client"
+path = "src/main.rs"
+
+[dependencies]
+horizon-core = { path = "../horizon-core" }
+horizon-world = { path = "../horizon-world" }
+horizon-render = { path = "../horizon-render" }
+horizon-protocol = { path = "../horizon-protocol" }
+horizon-assets = { path = "../horizon-assets" }

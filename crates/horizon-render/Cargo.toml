@@ -1,0 +1,8 @@
+[package]
+name = "horizon-render"
+description = "Render do Horizon: trait de renderer e implementação stub."
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+horizon-core = { path = "../horizon-core" }

@@ -1,0 +1,42 @@
+[workspace]
+members = [
+    "crates/horizon-core",
+    "crates/horizon-world",
+    "crates/horizon-render",
+    "crates/horizon-protocol",
+    "crates/horizon-assets",
+    "crates/horizon-client",
+    "crates/horizon-hub",
+    "crates/horizon-launcher",
+    "crates/horizon-hud",
+    "crates/horizon-cosmetics",
+    "crates/horizon-bench",
+    "crates/horizon-client-core",
+    "crates/horizon-client-input",
+    "crates/horizon-command",
+    "crates/horizon-hdr",
+    "crates/horizon-items",
+    "crates/horizon-narrator",
+    "crates/horizon-optifine",
+    "crates/horizon-polytone",
+    "crates/horizon-shader-api",
+    "crates/horizon-shaders",
+    "crates/horizon-telemetry",
+    "crates/horizon-theme",
+    "crates/horizon-threads",
+    "crates/horizon-mod-api-gen",
+]
+
+
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Recriação do zero do núcleo do Horizon (partes 100% de autoria do horizon-rust/horizon), em Rust."
+license = "MIT"
+repository = "https://github.com/glearflame/horizon-recreate"
+
+[profile.release]
+opt-level = 3

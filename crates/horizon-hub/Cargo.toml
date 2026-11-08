@@ -1,0 +1,13 @@
+[package]
+name = "horizon-hub"
+description = "Hub/lobby do Glear-Mine: salas, filas de conexão e gerenciamento de jogadores."
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "glear-mine-hub"
+path = "src/main.rs"
+
+[dependencies]
+horizon-core = { path = "../horizon-core" }
+horizon-protocol = { path = "../horizon-protocol" }

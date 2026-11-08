@@ -1,0 +1,8 @@
+target/
+**/*.rs.bak
+*.swp
+.local/
+.idea/
+.vscode/
+Cargo.lock
+ll-mine-ui/

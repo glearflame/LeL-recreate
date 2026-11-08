@@ -1,0 +1,148 @@
+//! Módulo client_render — baseado no horizon-rust/horizon (MIT).
+//!
+//! Código derivado de https://github.com/horizon-rust/horizon/tree/main/crates/horizon-client-render/src
+//! Créditos para horizon-rust/horizon e seus contribuidores.
+//!
+//! Módulos que existem como arquivos .rs são declarados com `pub mod`.
+//! Módulos stubs são criados para dependências que não existem no nosso workspace.
+
+//! Todos os módulos que existem como arquivos em src/client_render/.
+pub mod assets;
+pub mod audio;
+pub mod ban_notice;
+pub mod biome;
+pub mod block_edit;
+pub mod block_entities;
+pub mod block_entity_anim;
+pub use block_entity_render_tests as block_entity_render_tests;
+pub mod block_entity_render;
+pub mod block_sprites;
+pub mod block_states;
+pub mod bluemap;
+pub mod bluemap_detect;
+pub mod border_render;
+pub mod breaking;
+pub mod brewing;
+pub mod camera;
+pub mod chat;
+pub use chat_tests as chat_tests;
+pub mod chunk;
+pub mod chunk_map;
+pub mod cit;
+pub mod cit_armor;
+pub mod cit_assets;
+pub mod cit_glint;
+pub mod client_resources;
+pub mod clouds;
+pub mod collisions;
+pub mod command_block;
+pub mod connected;
+pub mod containers;
+pub mod controller_ui;
+pub mod crash;
+pub mod custom_sky;
+pub mod datapack;
+pub mod dynamic_light;
+pub mod effects;
+pub mod entity;
+pub mod environment;
+pub mod extras;
+pub mod extras_ui;
+pub mod fast_hash;
+pub mod fluid_render;
+pub mod fog;
+pub mod font;
+pub mod fusion;
+pub mod gfx;
+pub mod graphics;
+pub mod graphics_style;
+pub mod graphics_ui;
+pub mod hdr_calibration;
+pub mod hud;
+pub mod hud_kit;
+pub mod hud_layout;
+pub mod hud_overlays;
+pub mod inventory_effects;
+pub mod java_text;
+pub mod jigsaw_block;
+pub mod level_loading;
+pub mod light;
+pub mod lod;
+pub mod logging;
+pub mod menu_blur;
+pub mod mesher;
+pub mod minimap;
+pub mod mipmap;
+pub mod mod_browser;
+pub mod model_library;
+pub mod models;
+pub mod multiline_edit;
+pub mod native_emissive;
+pub mod options_file;
+pub mod options_fixes;
+pub mod options_ui;
+pub mod overlay;
+pub mod pack_browser;
+pub mod pack_screen;
+pub mod packs;
+pub mod pad_cursor;
+pub mod pad_glyph;
+pub mod paged_maps;
+pub mod par;
+pub mod particles;
+pub mod poi_sections;
+pub mod post_chain;
+pub mod potent_sulfur;
+pub mod preedit;
+pub mod providers;
+pub mod pvp;
+pub mod pvp_hud;
+pub mod random_source;
+pub mod screen_draw;
+pub mod screen_effects;
+pub mod sculk;
+pub mod section_mask;
+pub mod server_terrain;
+pub mod settings;
+pub mod settings_shell;
+pub mod shader_options;
+pub mod shader_pack_list;
+pub mod shader_ui;
+pub mod signs;
+pub mod skins;
+pub mod social;
+pub mod sound_engine;
+pub mod sound_events;
+pub mod sound_preview;
+pub mod spans;
+pub mod split_layout;
+pub mod split_map;
+pub mod split_profiles;
+pub mod sprite_cache;
+pub mod sprites;
+pub mod streaming;
+pub mod structure_block;
+pub mod studio_ui;
+pub mod tab_list;
+pub mod telemetry;
+pub mod terrain_model;
+pub mod test_block;
+pub mod testgen;
+pub mod title_edition;
+pub mod touch;
+pub mod trims;
+pub mod ui;
+pub mod vault;
+pub mod weather;
+pub mod widgets;
+pub mod world;
+pub mod worldborder;
+pub mod zip;
+
+// Módulos stub que não existem como arquivos.
+pub mod bidi;
+pub mod command;
+pub mod text;
+
+// Tipos comuns.
+pub type Result<T> = std::result::Result<T, String>;

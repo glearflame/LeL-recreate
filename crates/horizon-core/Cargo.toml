@@ -1,0 +1,7 @@
+[package]
+name = "horizon-core"
+description = "Núcleo do Horizon: posições, matemática, RNG xoroshiro e geometria de colisão."
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

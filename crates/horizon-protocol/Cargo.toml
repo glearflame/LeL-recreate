@@ -1,0 +1,7 @@
+[package]
+name = "horizon-protocol"
+description = "Tipos de pacote de rede do Horizon."
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

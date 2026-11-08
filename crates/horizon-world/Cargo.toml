@@ -1,0 +1,8 @@
+[package]
+name = "horizon-world"
+description = "Mundo do Horizon: blocos, estados de bloco, chunks, mundo e registro de blocos."
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+horizon-core = { path = "../horizon-core" }

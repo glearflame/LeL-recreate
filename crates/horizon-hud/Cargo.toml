@@ -1,0 +1,33 @@
+[package]
+name = "horizon-hud"
+description = "HUD e painéis in-game do Glear-Mine (tema Glear-Mine): vídeo, mods, overlays. Recriação do zero."
+version.workspace = true
+edition = "2024"
+license.workspace = true
+
+[[bin]]
+name = "glear-hud-demo"
+path = "src/bin/hud_demo.rs"
+
+[dependencies]
+eframe = "0.29"
+egui = "0.29"
+horizon-core = { path = "../horizon-core" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Dependências do client_render (horizon-rust/horizon)
+ab_glyph = "0.2.32"
+base64 = "0.22"
+bytemuck = { version = "1.24", features = ["derive"] }
+flate2 = { version = "1.1.10", default-features = false, features = ["zlib-rs", "runtime_detection"] }
+glam = "0.30"
+log = "0.4"
+miniz_oxide = "0.8"
+naga = { version = "30.0.1", features = ["wgsl-in"] }
+half = "2"
+png = "0.18"
+sha1 = "0.10"
+sha2 = "0.10.9"
+smallvec = { version = "1", features = ["const_new"] }
+unicode-bidi = "0.3.18"
