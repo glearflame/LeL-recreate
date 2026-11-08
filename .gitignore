@@ -6,3 +6,4 @@ target/
 .vscode/
 Cargo.lock
 ll-mine-ui/
+rust/
